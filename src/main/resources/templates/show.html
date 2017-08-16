@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+
+<a href="/">Show All Contact</a><br />
+<p>Id: <span th:text="${contact.id}" ></span></p><br />
+<p>First Name: <span th:text="${contact.firstName}" ></span></p><br />
+<p>Last Name: <p th:text="${contact.lastName}" ></p></p><br />
+<p>Email: <sapn th:text="${contact.email}" ></sapn></p>
+<p>Phone No.: <span th:text="${contact.phoneNum}" ></span></p><br />
+<a th:href="@{/delete/{id}(id=${contact.id})}">Delete this contact</a>
+</body>
+</html>
