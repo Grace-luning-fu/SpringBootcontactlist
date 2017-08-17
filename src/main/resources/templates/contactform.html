@@ -15,7 +15,7 @@
     <p>Email :<input type="text" th:field="*{email}" /></p>
     <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span><br />
 
-    <p>Phone Number :<input type="text" th:field="*{phoneNum}" /></p>
+    <p>Phone Number :<input type="number" th:field="*{phoneNum}" /></p>
     <span th:if="${#fields.hasErrors('phoneNum')}" th:errors="*{phoneNum}"></span><br />
     <br />
 
